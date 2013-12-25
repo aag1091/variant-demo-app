@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="large-12 columns show-comic-list">
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="panel">
+          <h5 class="title"><%= @comic.title %></h5>
+          <h6 class="creator">created by <%= @comic.creator %><h6>
+          <h6 class="subheader description"><%= @comic.description %></h6>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>

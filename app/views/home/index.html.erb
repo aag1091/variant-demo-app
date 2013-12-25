@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="large-12 columns desktop-comic-list">
+    <div class="row">
+      <% @comics.each do |comic| %>
+        <div class="large-4 columns">
+          <div class="panel">
+            <h5 class="title"><%= link_to comic.title, comic %></h5>
+            <h6 class="creator">created by <%= comic.creator %><h6>
+            <h6 class="subheader description"><%= truncate(comic.description, length: 200) { link_to "more", comic } %></h6>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
