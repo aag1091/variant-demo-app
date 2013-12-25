@@ -1,7 +1,7 @@
 <div class="row">
-  <div class="large-12 columns desktop-comic-list">
+  <div class="small-12 columns desktop-comic-list">
     <% @comics.each do |comic| %>
-      <div class="large-4 columns">
+      <div class="small-6 columns">
         <div class="panel">
           <h5 class="title"><%= link_to comic.title, comic %></h5>
           <h6 class="creator">created by <%= comic.creator %><h6>
